@@ -44,7 +44,7 @@ https://cocoapods.org/pods/Alamofire
 
 - As soon as the app loads, data is fetched from the network. if the app has no connectivity, 'No results' shown.
  
- DetailsView Section the Image is fetched and cached.
+- DetailsView Section the Image is fetched and cached.
 
 ## Unit tests
 - ViewModels tested with sample data
@@ -58,8 +58,6 @@ https://cocoapods.org/pods/Alamofire
 
 - loading indicator for data loading
 - Caching of Data for a feed list for a period or cache expiry
-- Caching of Images to unnecessary fetches
-
 
 ## Notes:
  

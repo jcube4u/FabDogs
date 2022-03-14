@@ -17,15 +17,16 @@ struct BreedDetailView: View {
 
     var body: some View {
         ScrollView {
+            VStack(alignment: .center) {
+                Text(viewModel.name)
+                    .font(.title)
+                    .fontWeight(.heavy)
+                NetworkImage(url: URL(string: viewModel.imageURL))
+                         .frame(width: 350, height: 300)
+                         .cornerRadius(5)
+            }
             VStack(alignment: .leading) {
-                VStack(alignment: .center) {
-                    Text(viewModel.name)
-                        .font(.title)
-                        .fontWeight(.heavy)
-                    NetworkImage(url: URL(string: viewModel.imageURL))
-                             .frame(maxHeight: 300)
-                             .aspectRatio(3 / 2, contentMode: .fit)
-                }
+
             Spacer()
             DividerView().padding(.leading).padding(.trailing)
 
@@ -51,7 +52,7 @@ struct BreedDetailView: View {
 
                 categorySection()
 
-            Group {
+            Group() {
 
                 DividerView().padding(.leading).padding(.trailing)
                 Spacer()
@@ -82,14 +83,6 @@ struct BreedDetailView: View {
 
 }
 
-struct ExampleView: View {
-    var body: some View {
-        Rectangle()
-            .inset(by: 10)
-            .stroke(Color.blue, lineWidth: 20)
-            .frame(width: 250, height: 150)
-    }
-}
 
 struct BreedDetailView_Previews: PreviewProvider {
     static var previews: some View {

@@ -12,7 +12,6 @@ Listing of First set of Dog Breeds
 
 Details View for each Dog Breed
 
-
 ---
 
 
@@ -43,11 +42,12 @@ https://cocoapods.org/pods/Alamofire
 - using dependency Injection for Model in to ViewModel and ViewModel in to 
 - Binding of Datasource and View using @Publisher and @ObservedObject model.  As soon as the data is updated of fetched from service Layer. it is avilable to View 
 
-- As soon as the app loads, data is fethed from the network. if the app has no connectivity, 'No results' shown.
+- As soon as the app loads, data is fetched from the network. if the app has no connectivity, 'No results' shown.
  
+ DetailsView Section the Image is fetched and cached.
 
 ## Unit tests
-- ViewModels tested with sample data 
+- ViewModels tested with sample data
 
 
 ## Further Improvements that could be carried out
@@ -66,9 +66,9 @@ https://cocoapods.org/pods/Alamofire
  
 Initially started of with SwiftUI and Combine but stepped back as it seems bit of overkill for what I was trying to achieve.
 
-Use promiseKit with Alamofire  to tie up async calls and with network data fetch.
+Use promiseKit with Alamofire  to tie up async calls and with network data fetch. Alamofire calls are very simple and could be easily swapped with URLSession.
 
-It was intresting and fun to work on it.
+Fun litle project.
 
 ---
 

@@ -12,7 +12,6 @@ Listing of First set of Dog Breeds
 
 Details View for each Dog Breed
 
-
 ---
 
 
@@ -40,26 +39,33 @@ https://cocoapods.org/pods/Alamofire
 ## Implementation
 
 - Using MVVM design pattern for seperation of Business logic and View, allowing the app to be maintanable and testable.
-- using dependency Injection for Model in to ViewModel and ViewModel in to 
+- Using dependency Injection for Model in to ViewModel and ViewModel in to View.
 - Binding of Datasource and View using @Publisher and @ObservedObject model.  As soon as the data is updated of fetched from service Layer. it is avilable to View 
+<<<<<<< HEAD
 - Netowk layer abstactino using protocols to easiyl swap out the calls with local mock response
 - As soon as the app loads, data is fethed from the network. if the app has no connectivity, 'No results' shown.
  
 - Image in details page could return different size images, using content - fit 
+=======
+
+- As soon as the app loads, data is fetched from the network. if the app has no connectivity, 'No results' shown.
+ 
+- DetailsView Section the Image is fetched and cached.
+>>>>>>> 070c41fa1ee72288c00a0425c379b47c815c64a6
 
 ## Unit tests
-- ViewModels tested with sample data 
+- ViewModels tested with sample data
 
 
 ## Further Improvements that could be carried out
 
-- Started a variant of the current Version by using ViewModelFactory and Controller to central data acccess and data transformation 
-
+- Started a variant of the current Version in seperate repository by using ViewModelFactory and Controller to central data acccess and data transformation.(WIP)
 
 - UI tests could be added with MockData
 
 - loading indicator for data loading
 - Caching of Data for a feed list for a period or cache expiry
+
 - Caching of Images to unnecessary fetches
 - Abstraction of Imageloader to use urlsession by injection 
 
@@ -68,9 +74,9 @@ https://cocoapods.org/pods/Alamofire
  
 Initially started of with SwiftUI and Combine but stepped back as it seems bit of overkill for what I was trying to achieve.
 
-Use promiseKit with Alamofire  to tie up async calls and with network data fetch.
+Use promiseKit with Alamofire  to tie up async calls and with network data fetch. Alamofire calls are very simple and could be easily swapped with URLSession.
 
-It was intresting and fun to work on it.
+Fun litle project.
 
 ---
 

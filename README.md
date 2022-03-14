@@ -41,17 +41,13 @@ https://cocoapods.org/pods/Alamofire
 - Using MVVM design pattern for seperation of Business logic and View, allowing the app to be maintanable and testable.
 - Using dependency Injection for Model in to ViewModel and ViewModel in to View.
 - Binding of Datasource and View using @Publisher and @ObservedObject model.  As soon as the data is updated of fetched from service Layer. it is avilable to View 
-<<<<<<< HEAD
-- Netowk layer abstactino using protocols to easiyl swap out the calls with local mock response
-- As soon as the app loads, data is fethed from the network. if the app has no connectivity, 'No results' shown.
- 
-- Image in details page could return different size images, using content - fit 
-=======
 
-- As soon as the app loads, data is fetched from the network. if the app has no connectivity, 'No results' shown.
- 
-- DetailsView Section the Image is fetched and cached.
->>>>>>> 070c41fa1ee72288c00a0425c379b47c815c64a6
+- Network layer abstaction using protocols to easiyl swap out the calls with local mock response
+- As soon as the app loads, data is fethed from the network. if the app has no connectivity, 'No results' shown.
+
+- DetailsView Section the Image is fetched and cached. 
+- Image in details page could return different size images, using content - fit  
+
 
 ## Unit tests
 - ViewModels tested with sample data
